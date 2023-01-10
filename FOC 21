@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+int main()
+{
+    long int bin,t,r,y,dec=0;
+    printf("ENTER THE BINARY NUMBER:-");
+    scanf("%ld",&bin);
+    //checking for binary..
+    t=bin;
+    while(t!=0)
+    {
+        r=t%10;
+        if(r!=0&&r!=1)
+        {
+            printf("INVALID INPUT");
+            exit(0);
+        }
+        t=t/10;
+    }
+    y=bin;
+    int n=0;
+    while(y!=0)
+    {
+        r=y%10;
+        dec+=r*pow(2,n);
+        y=y/10;
+        n++;
+    }
+    printf("\nBINARY CODE:-%ld",bin);
+    printf("\nDECIMAL NUMBER:-%ld",dec);
+}
