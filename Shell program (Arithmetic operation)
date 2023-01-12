@@ -1,0 +1,17 @@
+echo "enter two numbers"
+read a b
+echo "what is your coice?(1-5)"
+echo "1)sum"
+echo "2)difference"
+echo "3)product"
+echo "4)quotient"
+echo "5)remainder"
+echo "enter your choice"
+read n
+case "$n" in
+1)echo "sum of $a and $b is  `expr $a + $b`";;
+2)echo "difference of $a and $b is `expr $a - $b`";;
+3)echo "product of $a and $b is `expr $a \* $b`";;
+4)echo "quotient of $a and $b is `expr $a / $b`";;
+5)echo "remainder of $a and $b is`expr $a % $b`";;
+esac
