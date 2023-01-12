@@ -1,0 +1,8 @@
+echo “Enter your name:”
+read Name
+echo “Enter your program name:”
+read Prog
+echo “Enter your enrollment number:”
+read Enroll
+echo “Details you entered”
+echo "Name: $Name Program Name: $Prog Enrolment Number: $Enroll"
